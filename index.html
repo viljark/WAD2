@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="res/images/favicon.ico">
+	<title>My Dashboard</title>
+</head>
+<body>
+
+<header>
+	<strong>Welcome to your dashboard!</strong>
+</header>
+<section>
+	<h2>Profile</h2>
+	<div>
+		<img src="res/images/me.png" width="128" height="128" alt="My picture">
+	</div>
+	<div>
+		<ul>
+			<li>Your name</li>
+			<li> A date following this format dd/mm/yyyy</li>
+			<li> Software Engineering</li>
+		</ul>
+	</div>
+	<div>
+		<strong>2.65</strong>
+	</div>
+</section>
+
+<section>
+	<h2>Add new course</h2>
+	<form>
+		<div>
+			<label for="courseTitle">Course Title:</label>
+		</div>
+		<input name="courseTitle" id="courseTitle" type="text">
+		<div>
+			<label for="semester">Semester:</label>
+		</div>
+		<select name="semester" id="semester">
+			<option value="fall">Fall</option>
+			<option value="spring">Spring</option>
+		</select>
+
+		<div><label><strong>Attendance</strong></label></div>
+		<div>
+			<input name="attendance" value="virtual" id="virtual" type="radio">
+			<label for="virtual">Virtual attendance</label>
+		</div>
+		<div>
+			<input name="attendance" value="physical" id="physical" type="radio">
+			<label for="physical">Physical attendance</label>
+		</div>
+
+		<button type="submit">Submit</button>
+	</form>
+</section>
+
+<section>
+	<h2>Courses</h2>
+	<table>
+		<thead>
+		<tr>
+			<th>#</th>
+			<th>Course Title</th>
+			<th>Semester</th>
+			<th>Grade</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>1</td>
+			<td><a target="_blank" href="https://courses.cs.ut.ee/2022/ASD/fall">Agile software development</a></td>
+			<td>fall</td>
+			<td>82</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td><a target="_blank" href="https://courses.cs.ut.ee/2022/systemsmodelling/fall">Systems modelling </a>
+			</td>
+			<td>fall</td>
+			<td>85</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td><a target="_blank" href="https://courses.cs.ut.ee/2022/RE/fall">Requirements Engineering </a></td>
+			<td>fall</td>
+			<td>99</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td><a target="_blank" href="https://courses.cs.ut.ee/2022/HCI/fall">Human Computer Interaction</a></td>
+			<td>fall</td>
+			<td>65</td>
+		</tr>
+		</tbody>
+		<tfoot>
+		<tr>
+			<td>?</td>
+			<td>?</td>
+			<td>?</td>
+			<td>Average grade:</td>
+		</tr>
+		</tfoot>
+	</table>
+</section>
+<footer>
+	<ul>
+		<li>
+			<a target="_blank" href="https://ois2.ut.ee/">OIS</a>
+		</li>
+		<li>
+			<a target="_blank" href="https://courses.cs.ut.ee/">Courses</a>
+		</li>
+	</ul>
+</footer>
+</body>
+</html>
